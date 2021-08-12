@@ -10,12 +10,12 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <ThemeProvider theme={theme}>
       <Head>
-        <title>React Avançado - Boilerplate</title>
+        <title>@guilhermekuni - Frontend Engineer</title>
         <link rel="shortcut icon" href="/img/icon-512.png" />
         <link rel="apple-touch-icon" href="/img/icon-512.png" />
         <link rel="manifest" href="/manifest.json" />
         <meta
-          name="Guilherme Kuni - Frontend Engineer"
+          name="@guilhermekuni - Frontend Engineer"
           content="My personal website"
         />
       </Head>

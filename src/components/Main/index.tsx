@@ -3,9 +3,13 @@ import * as S from './styles';
 const Main = () => (
   <S.Wrapper>
     <S.MainBox>
-      <p>hi there, I'm</p>
-      <h1>Guilherme Kuniyoshi</h1>
-      <h2>front-end engineer</h2>
+      <S.TitleSection>
+        <p>hi there,</p>
+        <h1>I'm Kuni</h1>
+        <h2>
+          Front-end Engineer <strong>@ X-Team</strong>
+        </h2>
+      </S.TitleSection>
     </S.MainBox>
   </S.Wrapper>
 );

@@ -10,12 +10,16 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <ThemeProvider theme={theme}>
       <Head>
-        <title>@guilhermekuni - Frontend Engineer</title>
+        <title>@guilhermekuni — Frontend Engineer</title>
         <link rel="shortcut icon" href="/img/icon-512.png" />
         <link rel="apple-touch-icon" href="/img/icon-512.png" />
         <link rel="manifest" href="/manifest.json" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Lato"
+          rel="stylesheet"
+        />
         <meta
-          name="@guilhermekuni - Frontend Engineer"
+          name="@guilhermekuni — Frontend Engineer"
           content="My personal website"
         />
       </Head>

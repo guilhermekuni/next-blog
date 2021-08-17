@@ -2,10 +2,8 @@ import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.main`
   ${({ theme }) => css`
-    background-color: ${theme.colors.mainBg};
-    width: 100%;
     height: 100vh;
-    padding: ${theme.spacings.xxlarge};
+    padding: ${theme.spacings.medium} ${theme.spacings.xxlarge};
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,7 +11,23 @@ export const Wrapper = styled.main`
   `}
 `;
 
-export const MainBox = styled.div`
+export const Header = styled.header`
+  ${({ theme }) => css`
+    padding: 0 3rem;
+    color: ${theme.colors.texts};
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+
+    p {
+      font-size: ${theme.font.sizes.small};
+    }
+  `}
+`;
+
+export const MainBox = styled.section`
   ${({ theme }) => css`
     color: ${theme.colors.texts};
     padding: 3rem;
@@ -22,7 +36,7 @@ export const MainBox = styled.div`
     align-items: flex-start;
     justify-content: center;
     height: 100%;
-    width: 1600px;
+    width: 100%;
 
     h1 {
       font-size: ${theme.font.sizes.title};
@@ -31,11 +45,6 @@ export const MainBox = styled.div`
     h2 {
       font-size: ${theme.font.sizes.xlarge};
       color: ${theme.colors.white};
-
-      strong {
-        color: ${theme.colors.primary};
-        font-weight: bold;
-      }
     }
 
     p {
@@ -44,13 +53,25 @@ export const MainBox = styled.div`
   `}
 `;
 
-export const TitleSection = styled.section`
+export const Link = styled.a`
+  ${({ theme }) => css`
+    color: ${theme.colors.primary};
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+  `}
+`;
+
+export const SocialLinksSection = styled.section`
   ${({ theme }) => css`
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    width: 600px;
-    height: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 400px;
+    margin-top: ${theme.spacings.medium};
+
+    svg {
+      height: 40px;
+    }
   `}
 `;

@@ -17,6 +17,14 @@ export const SocialLinksSection = styled.section`
       &:hover {
         color: ${theme.colors.primary};
       }
+
+      @media (max-width: ${theme.breakpoints.small}) {
+        margin-left: ${theme.spacings.medium};
+      }
+    }
+
+    @media (max-width: ${theme.breakpoints.small}) {
+      display: none;
     }
   `}
 `;

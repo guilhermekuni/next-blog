@@ -24,10 +24,14 @@ export default {
     mainBg: '#1d1d1d',
     boxBg: '#FAFAFA',
     texts: '#fff',
+    darkLinks: '#e7e8ec',
     white: '#FFFFFF',
     black: '#090a0b',
     brown: '#9b6a6c',
     gray: '#cdcd',
+  },
+  transitions: {
+    hover: '0.75s',
   },
   shadows: {
     card: '2px 2px 5px 1px rgba(0, 0, 0, 0.5)',
@@ -40,6 +44,7 @@ export default {
     large: '6.0rem',
     xlarge: '6.4rem',
     xxlarge: '12.8rem',
+    ularge: '24rem',
   },
   breakpoints: {
     xxsmall: '150px',

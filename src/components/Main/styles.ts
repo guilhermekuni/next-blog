@@ -1,19 +1,18 @@
 import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.main`
-  ${({ theme }) => css`
+  ${({ theme: { spacings } }) => css`
     height: 100vh;
-    padding: ${theme.spacings.medium} ${theme.spacings.xxlarge};
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-end;
     justify-content: center;
+    padding: ${spacings.large} ${spacings.ularge} 0;
   `}
 `;
 
 export const Header = styled.header`
   ${({ theme }) => css`
-    padding: 0 3rem;
     color: ${theme.colors.texts};
     display: flex;
     flex-direction: column;
@@ -29,13 +28,24 @@ export const Header = styled.header`
 
 export const MainBox = styled.section`
   ${({ theme }) => css`
-    color: ${theme.colors.texts};
-    padding: 3rem;
+    padding: ${theme.spacings.xxsmall} ${theme.spacings.large};
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: flex-end;
     height: 100%;
+    width: 100%;
+  `}
+`;
+
+export const Content = styled.section`
+  ${({ theme }) => css`
+    color: ${theme.colors.texts};
+    margin-top: ${theme.spacings.ularge};
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
     width: 100%;
 
     h1 {
@@ -59,19 +69,6 @@ export const Link = styled.a`
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
-  `}
-`;
-
-export const SocialLinksSection = styled.section`
-  ${({ theme }) => css`
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 400px;
-    margin-top: ${theme.spacings.medium};
-
-    svg {
-      height: 40px;
-    }
+    transition: ${theme.transitions.hover};
   `}
 `;

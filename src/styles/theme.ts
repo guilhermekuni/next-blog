@@ -44,7 +44,7 @@ export default {
     large: '6.0rem',
     xlarge: '6.4rem',
     xxlarge: '12.8rem',
-    ularge: '24rem',
+    ularge: '32rem',
   },
   breakpoints: {
     xxsmall: '150px',

@@ -22,6 +22,7 @@ export const Header = styled.header`
 
     p {
       font-size: ${theme.font.sizes.small};
+      color: ${theme.colors.darkLinks};
     }
   `}
 `;
@@ -40,13 +41,13 @@ export const MainBox = styled.section`
 export const Content = styled.section`
   ${({ theme }) => css`
     color: ${theme.colors.texts};
-    margin-top: ${theme.spacings.ularge};
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    height: 200px;
+    height: 100%;
     width: 100%;
+    line-height: 8rem;
 
     h1 {
       font-size: ${theme.font.sizes.title};

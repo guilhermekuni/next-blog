@@ -15,7 +15,7 @@ const App = ({ Component, pageProps }: AppProps) => {
         <link rel="apple-touch-icon" href="/img/icon.png" />
         <link rel="manifest" href="/manifest.json" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Lato"
+          href="https://fonts.googleapis.com/css2?family=Azeret+Mono"
           rel="stylesheet"
         />
         <meta

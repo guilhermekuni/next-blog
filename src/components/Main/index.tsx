@@ -9,10 +9,10 @@ const Main = () => (
         <p>@ guilhermekuni</p>
       </S.Header>
       <S.Content>
-        <p>hi there, I'm </p>
-        <h1>Guilherme</h1>
+        <p>hi there,</p>
+        <h1>I'm Guilherme</h1>
         <h2>
-          Front-end Engineer{' '}
+          Frontend Engineer{' '}
           <S.Link target="_blank" href="https://x-team.com/">
             @ X-Team
           </S.Link>
